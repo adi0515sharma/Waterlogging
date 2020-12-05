@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".poi_display">
+
+
+    <Toolbar
+        android:id="@+id/poi_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentTop="true"
+        android:background="#555994"
+        android:navigationIcon="@drawable/cancel_back"
+        android:subtitle="Place Of Interest"
+        android:title="MyApp">
+
+    </Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:id="@+id/poi_loader"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/toolbar"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:visibility="gone" />
+</LinearLayout>
+
+    <ListView
+        android:layout_below="@id/poi_toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:dividerHeight="@dimen/_5sdp"
+        android:id="@+id/poi_list"
+        android:visibility="visible"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>

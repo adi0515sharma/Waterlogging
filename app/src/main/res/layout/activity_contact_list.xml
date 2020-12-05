@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background_gradient"
+    tools:context=".ContactList">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp">
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/cancel_back"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/cancel_back"
+            />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <Space
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:id="@+id/search"
+                android:hint="Search Contact"
+                android:allowUndo="true"
+                />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/dialpad"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/dialpad"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:dividerHeight="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_560sdp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/contact_loader"
+        android:orientation="vertical"
+        >
+
+        <ProgressBar
+
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/toolbar"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".News">
+
+    <Toolbar
+        android:id="@+id/news_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#555994"
+        android:navigationIcon="@drawable/cancel_back"
+        android:subtitle="News"
+        android:title="MyApp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/news_toolbar"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <LinearLayout
+
+                android:id="@+id/first_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/weather"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Weather"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/rainy" />
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_140sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/agriculture"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="agriculture"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/agriculture" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_level"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/job"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Job"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/job_news" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_140sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/food"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Food"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/dish" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thired_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_level"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/movie"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Movie"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/video" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_150sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/cricket"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cricket"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/cricket_news" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thired_level"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/technology"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Technology"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/smartphone" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_140sdp"></Space>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:id="@+id/real_state"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Real Estate"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/house" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fifth_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fourth_level"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/health"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Health"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/heart" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_140sdp"></Space>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:id="@+id/stock_market"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Stock Market"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/stockmarket" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/six_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fifth_level"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/latest"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Latest News"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/latest_news" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_140sdp"></Space>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:background="@drawable/shape"
+                    android:id="@+id/world"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="World"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_54sdp"
+                        android:layout_height="@dimen/_54sdp"
+                        android:src="@drawable/world" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

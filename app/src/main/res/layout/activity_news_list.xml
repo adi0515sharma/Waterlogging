@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:gravity="center_horizontal"
+    tools:context=".News_list">
+    <Toolbar
+        android:id="@+id/news_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentTop="true"
+        android:background="#555994"
+        android:gravity="right"
+        android:navigationIcon="@drawable/cancel_back"
+        android:subtitle="Topic"
+        android:title="News">
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/pageNo"
+            />
+
+    </Toolbar>
+
+
+    <!-- progress bar which is seen before loading of news -->
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+
+        android:layout_height="match_parent"
+        android:id="@+id/progress"
+        android:layout_below="@id/news_view"
+        >
+        <ListView
+            android:id="@+id/news"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView><!-- this is all list to represent the news -->
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".HelpLine">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#555994"
+        android:navigationIcon="@drawable/cancel_back"
+        android:subtitle="Emergency Call"
+        android:title="MyApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+        <Space
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:id="@+id/custom_call"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/call"
+            ></ImageView>
+    </Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ambulance"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/ambulance">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambulance"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/police"
+                    android:layout_width="159dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/policeman">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Police Station"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/_5sdp"
+
+                android:layout_height="@dimen/_10sdp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:id="@+id/womenhelpline"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/nurse">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Women Harshment"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"></Space>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:id="@+id/fire"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/fire"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fire brigade"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="@dimen/_5sdp"
+
+                android:layout_height="@dimen/_10sdp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:id="@+id/NDRF"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/cop">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NDRF"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/railway"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/oldman"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senior Citizen"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="@dimen/_5sdp"
+
+                android:layout_height="@dimen/_10sdp"></Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:id="@+id/Kisan"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="103dp"
+                        android:src="@drawable/farmer">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kisan Helpline"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/lpg_gas"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/lpg"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LPG Leak Helpline"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="@dimen/_5sdp"
+
+                android:layout_height="@dimen/_10sdp"></Space>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:id="@+id/travler"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/traveler">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tourist Helpline"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_2sdp"></Space>
+
+                <LinearLayout
+                    android:id="@+id/senior"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:src="@drawable/train"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Railway Enquiry"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="@dimen/_5sdp"
+
+                android:layout_height="@dimen/_10sdp"></Space>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

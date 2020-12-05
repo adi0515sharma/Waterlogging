@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/poi_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            />
+        <Space
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/title_poi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_15sdp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_5sdp"/>
+            <TextView
+                android:id="@+id/address_poi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_5sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        >
+        <Button
+            android:id="@+id/direction"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Direction"
+            android:background="@drawable/style_button"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/bagni"
+    android:elevation="@dimen/_10sdp"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/sea"
+            ></ImageView>
+        <Space
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="2dp"
+            ></Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WaterLogging Occure "
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/md_red_100"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/bagni"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:text="========================================================================="
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="ADDRESS : "
+            android:textSize="@dimen/_15sdp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/mapboxRed"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="NLETCC, Talmiki Rd, Potohar Nagar, Santacruz West, Mumbai, Maharashtra 400125"
+            android:textSize="@dimen/_15sdp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_14sdp"
+            android:text="========================================================================="
+            android:textStyle="bold"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="SITUATION :"
+            android:textSize="@dimen/_15sdp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/mapboxRed"
+            android:text="Risk"
+            android:textSize="@dimen/_15sdp"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>
